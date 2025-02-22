@@ -1,0 +1,15 @@
+#python 3.11.5
+pandas
+numpy
+scikit-learn
+matplotlib
+#langchain
+#langchain_community
+#langchain_experimental
+#langchain_huggingface
+#streamlit
+#beautifulsoup4
+pdfplumber
+parse
+
+tabula-py
