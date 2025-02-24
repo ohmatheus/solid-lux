@@ -17,3 +17,9 @@ tabula-py
 langchain_core
 langchain_community
 langchain-anthropic
+
+sentence_transformers
+tiktoken
+faiss-cpu
+
+#torch from https://pytorch.org/get-started/locally/

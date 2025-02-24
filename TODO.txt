@@ -3,11 +3,10 @@
 	-> compare those informations bewteen different compagnies (start with Minimum premiums & Policy periods)
 - Find 'sub type' of insurance -> 19.0 Personal Auto or 19.0001 Private Passenger Auto (PPA)
 - Check how the data is structured (in pdf) for (1) other compagnies
-
-plan
-- Find another relevant compagny to compare with Tesla Property & Casualty, Inc. on personnal auto & download relevant files (rates/rules)
-- Extract information for both compagnies :
-	- rating algorithm (algo matrice)
-	- minimum premiums
-	- policy period
-	- [TODO longterm] :  (e.g., territory, vehicle use, driver age)
+- Spending a long time trying to figure out how to do the job
+- Testing stuffs with pdfplumber and tabula
+- Testing more stuffs with langchain + claude
+- loosing time trying do automate download from site, searching for solutions
+- Searching for solution on web to 'facilitate' usage of langchain
+- reading langchain documentation on pdf extraction -> testing differents approaches
+- having a way better overview on how to do poc and what to do to improve
