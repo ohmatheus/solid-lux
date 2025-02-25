@@ -1,0 +1,7 @@
+company_name,min_premium,min_premium_comments,policy_period,policy_period_comments,territory_factor_BI
+"Tesla Property & Casualty, Inc.",100,"The minimum premium is for a six-month policy, which cannot be reduced except in the event of a cancellation.",6,Policies may be written for policy periods for 6 months or less.,1
+Allied Property and Casualty Insurance Company,null,null,6,"A Policy Period is six or twelve months, as offered by the Company. The policy period value provided is the minimum period mentioned.",null
+Allied Property and Casualty Insurance Company,null,No minimum premium information found in the text,null,No explicit policy period mentioned in the text,"The territory factors are listed by county and ZIP code throughout the document, ranging from 060 to 999"
+Allied Property and Casualty Insurance Company,,,6,"Premiums are developed based on a six-month policy period. For twelve month policies, the otherwise applicable premium will be modified per the rating sequence.",
+Progressive County Mutual Insurance Company,null,"While Rule G05 mentions there is a Minimum Written Premium per policy, the specific dollar amount is not provided in the rules file and is referred to in the rate filing.",12,"According to Rule G03: ""All policies are written for an annual term.""",null
+Progressive County Mutual Insurance Company,,,35,"Based on the chargeable period mentioned in Rule S01 which states ""All accidents and violations occurring in the 35-month period prior to the policy term are considered""",
