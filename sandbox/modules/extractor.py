@@ -40,9 +40,41 @@ class _InsuranceExtraction_Rule(BaseModel):
     policy_period_comments: Optional[str] = Field(
         description="Policy period commentaries or additionnal informations."
     )
-    territory_factor_BI: Optional[str] = Field(
-        description="The company's insurance territory factor for BI (Bodily Injury) insurance.", 
+    supp_fee_policy: Optional[str] = Field(
+        description="Additionnal fee per policy.",
         default=""
+    )
+    coverage_BI: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include BI (Bodily Injury) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_PD: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include PD (Property Damage) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_MED: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include MED (Medical Payments) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_UM_UIMBI: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include UM/UIMBI (Uninsured/Underinsured Motorists Bodily Injury) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_UMPD: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include UMPD (Uninsured/Underinsured Motorists Property Damage) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_COMP: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include COMP (Comprehensive) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_COLL: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include COLL (Collision) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
+    )
+    coverage_GAP: Optional[str] = Field(
+        description=f"""Categorical value required. If the compagny include GAP (Auto Loan/Lease Gap Coverage) coverage in the formula. 
+        Select only between [mandatory, optionnal, none]""", 
     )
 
 #---------------------------------------------------------------------------
@@ -53,6 +85,7 @@ _prompt_template = ChatPromptTemplate.from_messages(
             "You are an expert extraction algorithm. "
             "Only extract relevant information from the text. "
             "If you do not know the value of an attribute asked to extract, "
+            "Try to deduce it or "
             "return null for the attribute's value.",
         ),
         # Please see the how-to about improving performance with
