@@ -20,7 +20,7 @@ __all__ = ["public_function", "PUBLIC_VAR"]
 # In the current form, those attributes will also be the dataframe headers
 class _InsuranceExtraction_Rule(BaseModel):
     '''Different informations extracted from a company insurance's rule & rate files.'''
-    # This doc-string is sent to the LLM as the description of the schema Person,
+    # This doc-string is sent to the LLM as the description of the schema,
     # and it can help to improve extraction results.
 
     company_name: str = Field(

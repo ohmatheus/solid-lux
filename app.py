@@ -12,7 +12,7 @@ def process_folder(folder_path, **kwargs):
     logger.info(f"Starting load and extraction of {folder_path} folder.")
     
     if not os.path.exists(folder_path):
-        logger.error("Error: Folder {folder_path} does not exist.")
+        logger.error(f"Error: Folder {folder_path} does not exist.")
         return
 
     pdf_files = [f for f in os.listdir(folder_path) if f.lower().endswith(".pdf")]
@@ -37,6 +37,9 @@ def process_folder(folder_path, **kwargs):
 #---------------------------------------------------------------------------
 def extract_from_foler(folder_path, **kwargs):
     results = process_folder(folder_path, **kwargs)
+    
+    if results is None:
+        return
     
     iterator = iter(results)
     final_df = next(iterator)
@@ -73,6 +76,8 @@ def main():
     }
     
     raw_df = extract_from_foler(folder, **args)
+    if raw_df is None:
+        return
     raw_df.to_csv("extracted.csv", index=False)
     df_cleaned = cleaner.clean_and_format(raw_df)
     cleaned_file_path = "./extracted_cleaned.csv"
