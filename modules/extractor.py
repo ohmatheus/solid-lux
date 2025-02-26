@@ -12,7 +12,7 @@ from langchain_text_splitters import TokenTextSplitter
 
 from typing import Optional, List
 
-from logger import logger
+from modules.logger_mod import logger
 
 __all__ = ["public_function", "PUBLIC_VAR"]
 
