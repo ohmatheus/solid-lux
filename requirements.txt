@@ -1,25 +1,13 @@
 #python 3.11.5
+pyinstaller
 pandas
 numpy
 scikit-learn
 matplotlib
-#langchain
-#langchain_community
-#langchain_experimental
-#langchain_huggingface
-#streamlit
-#beautifulsoup4
 pdfplumber
 parse
-
 tabula-py
-
 langchain_core
 langchain_community
 langchain-anthropic
-
 tiktoken
-
-#sentence_transformers
-#faiss-cpu
-#torch from https://pytorch.org/get-started/locally/
